@@ -1,0 +1,50 @@
+HELP.md
+target/
+.mvn
+mvnw.cmd
+.classpath
+.project
+log
+log.dir_IS_UNDEFINED
+support.log
+HELP
+mvnw
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+log.dir_IS_UNDEFINED/
+.mvn
+mvnw
+mvnw.cmd
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+log.dir_IS_UNDEFINED/
+.mvn
+mvnw
+mvnw.cmd
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+/.metadata/
