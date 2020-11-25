@@ -23,7 +23,7 @@ public class UserEntity implements Serializable {
     @Field("PASSWORD")
     private String password;
     @Field("EMAIL")
-    private String email;
+    private String userEmail;
     @Field("DOB")
     private String dateOfBirth;
     @Field("CONTACT_NO")
@@ -44,7 +44,7 @@ public class UserEntity implements Serializable {
 		this.gender = gender;
 		this.userName = userName;
 		this.password = password;
-		this.email = email;
+		this.userEmail = email;
 		this.dateOfBirth = dateOfBirth;
 		this.contactNo = contactNo;
 	}
@@ -82,11 +82,11 @@ public class UserEntity implements Serializable {
 	}
 
 	public String getEmail() {
-		return email;
+		return userEmail;
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		this.userEmail = email;
 	}
 
 	public String getDateOfBirth() {
@@ -119,7 +119,7 @@ public class UserEntity implements Serializable {
 		int result = 1;
 		result = prime * result + ((contactNo == null) ? 0 : contactNo.hashCode());
 		result = prime * result + ((dateOfBirth == null) ? 0 : dateOfBirth.hashCode());
-		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + ((userEmail == null) ? 0 : userEmail.hashCode());
 		result = prime * result + ((gender == null) ? 0 : gender.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
@@ -147,10 +147,10 @@ public class UserEntity implements Serializable {
 				return false;
 		} else if (!dateOfBirth.equals(other.dateOfBirth))
 			return false;
-		if (email == null) {
-			if (other.email != null)
+		if (userEmail == null) {
+			if (other.userEmail != null)
 				return false;
-		} else if (!email.equals(other.email))
+		} else if (!userEmail.equals(other.userEmail))
 			return false;
 		if (gender == null) {
 			if (other.gender != null)
@@ -183,7 +183,7 @@ public class UserEntity implements Serializable {
 	@Override
 	public String toString() {
 		return "UserEntity [id=" + id + ", name=" + name + ", gender=" + gender + ", userName=" + userName
-				+ ", password=" + password + ", email=" + email + ", dateOfBirth=" + dateOfBirth + ", contactNo="
+				+ ", password=" + password + ", email=" + userEmail + ", dateOfBirth=" + dateOfBirth + ", contactNo="
 				+ contactNo + "]";
 	}
 	
